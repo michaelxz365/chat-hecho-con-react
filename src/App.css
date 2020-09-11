@@ -1,33 +1,55 @@
-.App {
+.body{
+  background-image: url("http://chandra.harvard.edu/photo/2006/crab/crab.jpg");
+
+}
+*{
+ box-sizing:border-box;
+}
+.app {
   text-align: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/14/16/57/silver-2143730_960_720.jpg");
+ 
 }
-
-.App-logo {
+.app__logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  height: 80px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app__header {
+  
+  padding: 20px;
   color: white;
+  background-image: url("http://fondopantalla.com.es/file/1556/600x338/16:9/fondo-pantalla-minimalista-aviones_895061649.jpg");
 }
-
-.App-link {
-  color: #61dafb;
+.app__intro {
+  font-size: large;
+}
+.app__list {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.app__button {
+  border: 0;
+  border-radius: 0;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  opacity: .8;
+  outline: 0;
+}
+.app__button:hover {
+  opacity: 1;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media(max-widht:800px){
+  .left,.main,.right{
+      width: 80%;
   }
 }
